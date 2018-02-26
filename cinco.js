@@ -1,17 +1,25 @@
 function Mostrar()
 {
-	var dia;
+	var	diaDeSemana;
+	var finDeSemana;
 
-	dia=prompt(dia);
+	diaDeSemana=prompt("Ingrese un dia");
 
-	switch(dia)
+	switch(diaDeSemana)
 	{
 		case "Sabado":
 		case "Domingo":
 			alert("Es fin de semana");
 			break;
 
-	default:
-			alert("A trabajar");
+		case "Lunes":
+		case "Martes":
+		case "Miercoles":
+		case "Jueves":
+		case "Viernes":
+			alert("A trabajar !!!");
+			break;
 	}
+
+
 }
