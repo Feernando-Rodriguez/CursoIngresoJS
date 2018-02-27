@@ -1,43 +1,26 @@
+/*Hasta que el cliente quiera una letra, validar que sea una letra. No puede ser un numero
+se van a ingresar numeros entre -200 y 200 inclusive. Mostrar la letra del numero mas bajo
+el promedio de todos los numeros que se ingresaron despues de una vocal,
+La letra del maximo y el minimo.*/
 function Mostrar()
 {
-	var notas;
-	var sexo;
-	var promedioFinal;
-	var alumno;
+	var letra;
+	var numero;
+	var respuesta="";
 	var acumulador=0;
-	var seguir="";
-	var contador=0;
 
 
-
-
-	while(seguir!="no")
+	while(respuesta!="no")
 	{
-		alumno=prompt("Ingrese el nombre: ");
-		sexo=prompt("Ingrese f o m: ");
+		numero=prompt("Ingrese su numero");
+		numero=parseInt(numero);
 
-	while(sexo!="f" && sexo!="m")
-	{
-		sexo=prompt("Error, Ingrese f o m: ");
-	}
-
-		notas=prompt("Ingrese su nota: ")
-		notas=parseInt(notas);
-
-		acumulador=acumulador+notas;
-	while(notas<0 || notas>10)
+		while(numero>-200 && numero<200)
 		{
-			notas=prompt("Error, Ingrese nuevamente su nota");
+
 		}
-		contador=contador+1;
-		seguir=prompt(NO para salir);
-
-	}	
-	
-
-
-
-
+	}
 
 
 }
+//Terminar en casa... Usar bien el if y los else... y los while
