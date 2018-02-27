@@ -1,11 +1,25 @@
-
+/*Pedir la base y la alutura por prompt de un triangulo equilatero... Informar perimetro y superficie*/
 function Mostrar()
 {
-	var base;
 	var perimetro;
+	var altura;
+	var superficie;
+	var base;
 
-	base=document.getElementById('laBase').value;
+	altura=prompt("Ingrese la altura");
+	base=prompt("Ingrese la base");
 
-	perimetro= base*4;
-	alert("El perimetro es: " +perimetro);
+
+	altura=parseInt(altura);
+	base=parseInt(base);
+
+	//base=document.getElementById('laBase').value;
+
+
+
+	perimetro=base*3;
+
+	superficie=(base*altura)/2;
+
+	alert("El perimetro es "+perimetro+ " Y la superficie es "+superficie);
 }
